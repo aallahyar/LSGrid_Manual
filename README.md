@@ -30,4 +30,4 @@ __Remote:__ -R Specifies that the given port on the remote (server) host is to b
 
 ssh -R sourcePort:forwardToHost:onPort connectToHost means: connect with ssh to connectToHost, and forward all connection attempts to the remote sourcePort to port onPort on the machine called forwardToHost, which can be reached from your local machine.
 
-![Remote port forwarding](http://i.stack.imgur.com/4iK3b.png =25x10)
+<img src="http://i.stack.imgur.com/4iK3b.png" alt="Remote port forwarding" width="200" height="200"/>
