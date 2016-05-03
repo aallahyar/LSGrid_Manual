@@ -20,12 +20,14 @@ The -a option makes sure that all replicas of a file are removed. See the lcg-de
 (from: [http://unix.stackexchange.com/a/118650])
 
 
-__local__: -L Specifies that the given port on the local (client) host is to be forwarded to the given host and port on the remote side.
+__Local:__ -L Specifies that the given port on the local (client) host is to be forwarded to the given host and port on the remote side.
 
 ssh -L sourcePort:forwardToHost:onPort connectToHost means: connect with ssh to connectToHost, and forward all connection attempts to the local sourcePort to port onPort on the machine called forwardToHost, which can be reached from the connectToHost machine.
 
 ![Local port forwarding](http://i.stack.imgur.com/a28N8.png)
 
-remote: -R Specifies that the given port on the remote (server) host is to be forwarded to the given host and port on the local side.
+__Remote:__ -R Specifies that the given port on the remote (server) host is to be forwarded to the given host and port on the local side.
 
 ssh -R sourcePort:forwardToHost:onPort connectToHost means: connect with ssh to connectToHost, and forward all connection attempts to the remote sourcePort to port onPort on the machine called forwardToHost, which can be reached from your local machine.
+
+![Remote port forwarding](http://i.stack.imgur.com/4iK3b.png)
