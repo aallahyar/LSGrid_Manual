@@ -24,7 +24,7 @@ __Local:__ -L Specifies that the given port on the local (client) host is to be 
 
 ssh -L sourcePort:forwardToHost:onPort connectToHost means: connect with ssh to connectToHost, and forward all connection attempts to the local sourcePort to port onPort on the machine called forwardToHost, which can be reached from the connectToHost machine.
 
-![Local port forwarding](http://i.stack.imgur.com/a28N8.png =25x10)
+<img src="http://i.stack.imgur.com/a28N8.png" alt="Local port forwarding" style="width: 200px;"/>
 
 __Remote:__ -R Specifies that the given port on the remote (server) host is to be forwarded to the given host and port on the local side.
 
