@@ -17,9 +17,10 @@ lcg-del -a lfn:/grid/lsgrid/<your_username>/<target_file.txt>
 The -a option makes sure that all replicas of a file are removed. See the lcg-del man-page for more options.
 
 # Port Forwarding 
-
 (from: [http://unix.stackexchange.com/a/118650])
-**local:** -L Specifies that the given port on the local (client) host is to be forwarded to the given host and port on the remote side.
+
+
+__local__: -L Specifies that the given port on the local (client) host is to be forwarded to the given host and port on the remote side.
 
 ssh -L sourcePort:forwardToHost:onPort connectToHost means: connect with ssh to connectToHost, and forward all connection attempts to the local sourcePort to port onPort on the machine called forwardToHost, which can be reached from the connectToHost machine.
 
