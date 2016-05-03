@@ -1,6 +1,9 @@
 # LSGrid Manual
 A very brief guide for Life Science Grid usage. See [here](https://grid.surfsara.nl/wiki/index.php/Using_the_Grid/Grid_storage#Deleting_files_from_a_Storage_Element) for more details.
 
+### Job submission
+glite-wms-job-submit -d <user_name> --nomsg cluster.jdl
+
 ### List files
 Listing files and directories, e.g. to see all the files that are stored:
 
