@@ -1,0 +1,20 @@
+[
+ JobType="Parametric";
+ VirtualOrganisation="lsgrid";
+ Executable="load_env_ipengine.sh";
+ StdOutput="stdout.txt";
+ StdError="stderror.txt";
+ ParameterStart=0;
+ ParameterStep=1;
+ CpuNumber=1;
+ SMPGranularity=1;
+ Parameters=20;
+ Arguments = "grid:/ipengine.dist gb-ui-tud.ewi.tudelft.nl 30008 _PARAM_";
+ InputSandbox={"/data/home/allahyar/env/cluster_manager/load_env_ipengine.sh", "/data/home/allahyar/env/cluster_manager/cluster_storage.py", "/data/home/allahyar/env/cluster_manager/gcp", "./profile/security/ipcontroller-engine.json"};
+ OutputSandbox={"stdout.txt","stderror.txt"};
+ Requirements=(
+
+   ( other.GlueCEPolicyMaxWallClockTime > 300)
+);
+ ShallowRetryCount=3;
+]
